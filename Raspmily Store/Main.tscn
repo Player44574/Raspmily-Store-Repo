@@ -1,4 +1,4 @@
-[gd_scene load_steps=26 format=2]
+[gd_scene load_steps=32 format=2]
 
 [ext_resource path="res://Font/roboto_bold.tres" type="DynamicFont" id=1]
 [ext_resource path="res://Font/roboto_bold_20.tres" type="DynamicFont" id=2]
@@ -10,6 +10,9 @@
 [ext_resource path="res://Main menu scripts/gotoSettings.gd" type="Script" id=8]
 [ext_resource path="res://Main menu scripts/TWBPbutton.gd" type="Script" id=9]
 [ext_resource path="res://Icons/Covers/The world border platformer cover.png" type="Texture" id=10]
+[ext_resource path="res://Icons/Covers/Minesweeper cover.png" type="Texture" id=11]
+[ext_resource path="res://Icons/Covers/Naves cover.png" type="Texture" id=12]
+[ext_resource path="res://Icons/Covers/Pong cover.png" type="Texture" id=13]
 
 [sub_resource type="StyleBoxFlat" id=1]
 bg_color = Color( 0.109804, 0.105882, 0.113725, 1 )
@@ -100,6 +103,27 @@ border_width_top = 2
 border_width_right = 2
 border_width_bottom = 2
 border_color = Color( 0.886275, 0.878431, 0.984314, 1 )
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+
+[sub_resource type="StyleBoxFlat" id=16]
+bg_color = Color( 0.270588, 0.270588, 0.352941, 1 )
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+
+[sub_resource type="StyleBoxFlat" id=17]
+bg_color = Color( 0.270588, 0.270588, 0.352941, 1 )
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+
+[sub_resource type="StyleBoxFlat" id=18]
+bg_color = Color( 0.270588, 0.270588, 0.352941, 1 )
 corner_radius_top_left = 16
 corner_radius_top_right = 16
 corner_radius_bottom_right = 16
@@ -296,7 +320,7 @@ custom_constants/hseparation = 16
 columns = 4
 
 [node name="Panel" type="Panel" parent="MarginContainer/VBoxContainer/MarginContainer/GridContainer"]
-margin_right = 236.0
+margin_right = 228.0
 margin_bottom = 206.0
 rect_min_size = Vector2( 0, 206 )
 size_flags_horizontal = 3
@@ -312,11 +336,11 @@ custom_constants/margin_bottom = 8
 
 [node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer/VBoxContainer/MarginContainer/GridContainer/Panel/MarginContainer"]
 margin_top = 16.0
-margin_right = 236.0
+margin_right = 228.0
 margin_bottom = 198.0
 
 [node name="TextureRect" type="TextureRect" parent="MarginContainer/VBoxContainer/MarginContainer/GridContainer/Panel/MarginContainer/VBoxContainer"]
-margin_right = 236.0
+margin_right = 228.0
 margin_bottom = 148.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
@@ -326,7 +350,7 @@ stretch_mode = 6
 
 [node name="Label" type="Label" parent="MarginContainer/VBoxContainer/MarginContainer/GridContainer/Panel/MarginContainer/VBoxContainer"]
 margin_top = 155.0
-margin_right = 236.0
+margin_right = 228.0
 margin_bottom = 179.0
 size_flags_horizontal = 3
 size_flags_vertical = 6
@@ -348,8 +372,8 @@ expand_icon = true
 script = ExtResource( 5 )
 
 [node name="Panel2" type="Panel" parent="MarginContainer/VBoxContainer/MarginContainer/GridContainer"]
-margin_left = 252.0
-margin_right = 488.0
+margin_left = 244.0
+margin_right = 472.0
 margin_bottom = 206.0
 size_flags_horizontal = 3
 custom_styles/panel = SubResource( 12 )
@@ -362,11 +386,11 @@ custom_constants/margin_bottom = 8
 
 [node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer/VBoxContainer/MarginContainer/GridContainer/Panel2/MarginContainer"]
 margin_top = 16.0
-margin_right = 236.0
+margin_right = 228.0
 margin_bottom = 198.0
 
 [node name="TextureRect" type="TextureRect" parent="MarginContainer/VBoxContainer/MarginContainer/GridContainer/Panel2/MarginContainer/VBoxContainer"]
-margin_right = 236.0
+margin_right = 228.0
 margin_bottom = 148.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
@@ -376,7 +400,7 @@ stretch_mode = 6
 
 [node name="Label" type="Label" parent="MarginContainer/VBoxContainer/MarginContainer/GridContainer/Panel2/MarginContainer/VBoxContainer"]
 margin_top = 157.0
-margin_right = 236.0
+margin_right = 228.0
 margin_bottom = 176.0
 size_flags_horizontal = 3
 size_flags_vertical = 6
@@ -394,6 +418,128 @@ custom_styles/focus = SubResource( 15 )
 flat = true
 script = ExtResource( 9 )
 
+[node name="Panel3" type="Panel" parent="MarginContainer/VBoxContainer/MarginContainer/GridContainer"]
+margin_left = 488.0
+margin_right = 716.0
+margin_bottom = 206.0
+size_flags_horizontal = 3
+custom_styles/panel = SubResource( 16 )
+
+[node name="MarginContainer" type="MarginContainer" parent="MarginContainer/VBoxContainer/MarginContainer/GridContainer/Panel3"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_constants/margin_top = 16
+custom_constants/margin_bottom = 8
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer/VBoxContainer/MarginContainer/GridContainer/Panel3/MarginContainer"]
+margin_top = 16.0
+margin_right = 228.0
+margin_bottom = 198.0
+
+[node name="TextureRect" type="TextureRect" parent="MarginContainer/VBoxContainer/MarginContainer/GridContainer/Panel3/MarginContainer/VBoxContainer"]
+margin_right = 228.0
+margin_bottom = 148.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource( 12 )
+expand = true
+stretch_mode = 6
+
+[node name="Label" type="Label" parent="MarginContainer/VBoxContainer/MarginContainer/GridContainer/Panel3/MarginContainer/VBoxContainer"]
+margin_top = 152.0
+margin_right = 228.0
+margin_bottom = 182.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+size_flags_stretch_ratio = 0.2
+custom_colors/font_color = Color( 0.886275, 0.878431, 0.984314, 1 )
+custom_fonts/font = ExtResource( 2 )
+text = "Asteroids"
+align = 1
+valign = 1
+
+[node name="Panel4" type="Panel" parent="MarginContainer/VBoxContainer/MarginContainer/GridContainer"]
+margin_left = 732.0
+margin_right = 960.0
+margin_bottom = 206.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+custom_styles/panel = SubResource( 17 )
+
+[node name="MarginContainer" type="MarginContainer" parent="MarginContainer/VBoxContainer/MarginContainer/GridContainer/Panel4"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_constants/margin_top = 16
+custom_constants/margin_bottom = 8
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer/VBoxContainer/MarginContainer/GridContainer/Panel4/MarginContainer"]
+margin_top = 16.0
+margin_right = 228.0
+margin_bottom = 198.0
+
+[node name="TextureRect" type="TextureRect" parent="MarginContainer/VBoxContainer/MarginContainer/GridContainer/Panel4/MarginContainer/VBoxContainer"]
+margin_right = 228.0
+margin_bottom = 148.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource( 13 )
+expand = true
+stretch_mode = 6
+
+[node name="Label" type="Label" parent="MarginContainer/VBoxContainer/MarginContainer/GridContainer/Panel4/MarginContainer/VBoxContainer"]
+margin_top = 152.0
+margin_right = 228.0
+margin_bottom = 182.0
+size_flags_horizontal = 3
+size_flags_vertical = 7
+size_flags_stretch_ratio = 0.2
+custom_colors/font_color = Color( 0.886275, 0.878431, 0.984314, 1 )
+custom_fonts/font = ExtResource( 2 )
+text = "Ping-Pong"
+align = 1
+valign = 1
+
+[node name="Panel5" type="Panel" parent="MarginContainer/VBoxContainer/MarginContainer/GridContainer"]
+margin_top = 222.0
+margin_right = 228.0
+margin_bottom = 428.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+custom_styles/panel = SubResource( 18 )
+
+[node name="MarginContainer" type="MarginContainer" parent="MarginContainer/VBoxContainer/MarginContainer/GridContainer/Panel5"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_constants/margin_top = 16
+custom_constants/margin_bottom = 8
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer/VBoxContainer/MarginContainer/GridContainer/Panel5/MarginContainer"]
+margin_top = 16.0
+margin_right = 228.0
+margin_bottom = 198.0
+
+[node name="TextureRect" type="TextureRect" parent="MarginContainer/VBoxContainer/MarginContainer/GridContainer/Panel5/MarginContainer/VBoxContainer"]
+margin_right = 228.0
+margin_bottom = 148.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource( 11 )
+expand = true
+stretch_mode = 6
+
+[node name="Label" type="Label" parent="MarginContainer/VBoxContainer/MarginContainer/GridContainer/Panel5/MarginContainer/VBoxContainer"]
+margin_top = 152.0
+margin_right = 228.0
+margin_bottom = 182.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+size_flags_stretch_ratio = 0.2
+custom_colors/font_color = Color( 0.886275, 0.878431, 0.984314, 1 )
+custom_fonts/font = ExtResource( 2 )
+text = "Minesweeper"
+align = 1
+valign = 1
+
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 anims/transition_from_scene = SubResource( 5 )
 anims/transition_to_new_scene = SubResource( 6 )
@@ -401,6 +547,6 @@ anims/transition_to_new_scene = SubResource( 6 )
 [connection signal="pressed" from="MarginContainer/VBoxContainer/HBoxContainer/Button" to="MarginContainer/VBoxContainer/HBoxContainer/Button" method="_on_Button_pressed"]
 [connection signal="pressed" from="MarginContainer/VBoxContainer/MarginContainer/GridContainer/Panel/Button" to="MarginContainer/VBoxContainer/MarginContainer/GridContainer/Panel/Button" method="_on_Button_pressed"]
 [connection signal="pressed" from="MarginContainer/VBoxContainer/MarginContainer/GridContainer/Panel2/Button" to="MarginContainer/VBoxContainer/MarginContainer/GridContainer/Panel2/Button" method="_on_Button_pressed"]
-[connection signal="animation_finished" from="AnimationPlayer" to="MarginContainer/VBoxContainer/MarginContainer/GridContainer/Panel/Button" method="_on_AnimationPlayer_animation_finished"]
 [connection signal="animation_finished" from="AnimationPlayer" to="MarginContainer/VBoxContainer/HBoxContainer/Button" method="_on_AnimationPlayer_animation_finished"]
+[connection signal="animation_finished" from="AnimationPlayer" to="MarginContainer/VBoxContainer/MarginContainer/GridContainer/Panel/Button" method="_on_AnimationPlayer_animation_finished"]
 [connection signal="animation_finished" from="AnimationPlayer" to="MarginContainer/VBoxContainer/MarginContainer/GridContainer/Panel2/Button" method="_on_AnimationPlayer_animation_finished"]

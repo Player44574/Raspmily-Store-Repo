@@ -1,4 +1,4 @@
-[gd_scene load_steps=31 format=2]
+[gd_scene load_steps=33 format=2]
 
 [ext_resource path="res://Font/roboto_bold.tres" type="DynamicFont" id=1]
 [ext_resource path="res://Font/roboto_bold_20.tres" type="DynamicFont" id=2]
@@ -9,6 +9,8 @@
 [ext_resource path="res://Scenes/The world border platformer/iniscene.gd" type="Script" id=7]
 [ext_resource path="res://Scenes/The world border platformer/gobacktomain.gd" type="Script" id=8]
 [ext_resource path="res://Scenes/The world border platformer/versionSelector.gd" type="Script" id=9]
+[ext_resource path="res://Scenes/The world border platformer/uninstalltwbp.gd" type="Script" id=10]
+[ext_resource path="res://Scenes/The world border platformer/plainstalltwbp.gd" type="Script" id=11]
 
 [sub_resource type="StyleBoxFlat" id=1]
 bg_color = Color( 0.109804, 0.105882, 0.113725, 1 )
@@ -420,6 +422,7 @@ size_flags_horizontal = 3
 size_flags_stretch_ratio = 4.0
 custom_styles/focus = SubResource( 5 )
 flat = true
+script = ExtResource( 11 )
 
 [node name="Uninstall_button" type="Panel" parent="MarginContainer/VBoxContainer/MarginContainer/HBoxContainer/VBoxContainer/HBoxContainer"]
 margin_left = 359.0
@@ -444,10 +447,15 @@ size_flags_horizontal = 3
 size_flags_vertical = 3
 custom_styles/focus = SubResource( 7 )
 flat = true
+script = ExtResource( 10 )
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 anims/animation_close_scene = SubResource( 20 )
 anims/animation_to_scene = SubResource( 21 )
 
 [connection signal="pressed" from="MarginContainer/VBoxContainer/HBoxContainer2/Button" to="MarginContainer/VBoxContainer/HBoxContainer2/Button" method="_on_Button_pressed"]
+[connection signal="item_selected" from="MarginContainer/VBoxContainer/MarginContainer/HBoxContainer/VBoxContainer/OptionButton" to="MarginContainer/VBoxContainer/MarginContainer/HBoxContainer/VBoxContainer/HBoxContainer/Play_Install_button/Button" method="_on_OptionButton_item_selected"]
+[connection signal="item_selected" from="MarginContainer/VBoxContainer/MarginContainer/HBoxContainer/VBoxContainer/OptionButton" to="MarginContainer/VBoxContainer/MarginContainer/HBoxContainer/VBoxContainer/HBoxContainer/Uninstall_button/Button2" method="_on_OptionButton_item_selected"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/MarginContainer/HBoxContainer/VBoxContainer/HBoxContainer/Play_Install_button/Button" to="MarginContainer/VBoxContainer/MarginContainer/HBoxContainer/VBoxContainer/HBoxContainer/Play_Install_button/Button" method="_on_Button_pressed"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/MarginContainer/HBoxContainer/VBoxContainer/HBoxContainer/Uninstall_button/Button2" to="MarginContainer/VBoxContainer/MarginContainer/HBoxContainer/VBoxContainer/HBoxContainer/Uninstall_button/Button2" method="_on_Button2_pressed"]
 [connection signal="animation_finished" from="AnimationPlayer" to="MarginContainer/VBoxContainer/HBoxContainer2/Button" method="_on_AnimationPlayer_animation_finished"]

@@ -1,6 +1,6 @@
 extends OptionButton
 
-var versionList_link = "https://raw.githubusercontent.com/Player44574/RaspmilyOS-Repo/refs/heads/main/Marketplace/WindowsDesktop/The%20World%20Border%20Platformer/version.ini?token=GHSAT0AAAAAAC3ZLCPNO2UBOXDJEJSW4AS4Z3ETHOA"
+var versionList_link = "https://raw.githubusercontent.com/Player44574/Raspmily-Store-Repo/refs/heads/main/WindowsDesktop/The%20World%20Border%20Platformer/version.ini"
 var versionList_path = "user://The world border platformer/version.ini"
 
 var http_request: HTTPRequest
@@ -56,16 +56,16 @@ func _install_file(_result, _response_code, _headers, body, path, just_version: 
 			var version = config.get_value("Versions", key)
 			$"../HBoxContainer/Play_Install_button/Button".disabled = false
 			$"../HBoxContainer/Play_Install_button/Button".version = version
-			$"../HBoxContainer/Play_Install_button/Button".exe_link = "https://github.com/Player44574/RaspmilyOS-Repo/raw/refs/heads/main/Marketplace/WindowsDesktop/The%20World%20Border%20Platformer/The%20world%20border%20platformer%20V3.0/The%20world%20border%20platformer.exe" 
-			$"../HBoxContainer/Play_Install_button/Button".win_link = "https://github.com/Player44574/the-world-editor/raw/main/versions/Windows/The%20world%20editor%20V" + str(version) +"/data.win"
-			$"../HBoxContainer/Play_Install_button/Button".options_link = "https://raw.githubusercontent.com/Player44574/the-world-editor/main/versions/Windows/The%20world%20editor%20V" + str(version) +"/options.ini"
-			$"../HBoxContainer/Play_Install_button/Button".exe_path = "user://The world border platformer " + str(version) +"/The world editor.exe"
+			$"../HBoxContainer/Play_Install_button/Button".exe_link = "https://github.com/Player44574/Raspmily-Store-Repo/raw/refs/heads/main/WindowsDesktop/The%20World%20Border%20Platformer/The%20world%20border%20platformer%20V"+str(version)+"/The%20world%20border%20platformer.exe" 
+			$"../HBoxContainer/Play_Install_button/Button".win_link = "https://github.com/Player44574/Raspmily-Store-Repo/raw/refs/heads/main/WindowsDesktop/The%20World%20Border%20Platformer/The%20world%20border%20platformer%20V"+str(version)+"/data.win"
+			$"../HBoxContainer/Play_Install_button/Button".options_link = "https://raw.githubusercontent.com/Player44574/Raspmily-Store-Repo/refs/heads/main/WindowsDesktop/The%20World%20Border%20Platformer/The%20world%20border%20platformer%20V"+str(version)+"/options.ini"
+			$"../HBoxContainer/Play_Install_button/Button".exe_path = "user://The world border platformer " + str(version) +"/The world border platformer.exe"
 			$"../HBoxContainer/Play_Install_button/Button".win_path = "user://The world border platformer " + str(version) +"/data.win"
 			$"../HBoxContainer/Play_Install_button/Button".options_path = "user://The world border platformer " + str(version) +"/options.ini"
 
 			
 			$"../HBoxContainer/Uninstall_button/Button2".version = version
-			$"../HBoxContainer/Uninstall_button/Button2".exe_path = "user://The world border platformer " + str(version) +"/The world editor.exe"
+			$"../HBoxContainer/Uninstall_button/Button2".exe_path = "user://The world border platformer " + str(version) +"/The world border platformer.exe"
 			$"../HBoxContainer/Uninstall_button/Button2".win_path = "user://The world border platformer " + str(version) +"/data.win"
 			$"../HBoxContainer/Uninstall_button/Button2".options_path = "user://The world border platformer " + str(version) +"/options.ini"
 			
