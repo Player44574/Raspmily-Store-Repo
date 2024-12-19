@@ -1,0 +1,2 @@
+-Few emulators (like nes, snes, gb, gbc and gba)
+-Essential Apps like in normal ROS

@@ -1,0 +1,406 @@
+[gd_scene load_steps=26 format=2]
+
+[ext_resource path="res://Font/roboto_bold.tres" type="DynamicFont" id=1]
+[ext_resource path="res://Font/roboto_bold_20.tres" type="DynamicFont" id=2]
+[ext_resource path="res://Icons/Covers/The world editor cover.png" type="Texture" id=3]
+[ext_resource path="res://Icons/shopping_bag_32dp_E8EAED_FILL0_wght400_GRAD0_opsz40.png" type="Texture" id=4]
+[ext_resource path="res://Main menu scripts/Twebutton.gd" type="Script" id=5]
+[ext_resource path="res://Main.gd" type="Script" id=6]
+[ext_resource path="res://Icons/settings_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.png" type="Texture" id=7]
+[ext_resource path="res://Main menu scripts/gotoSettings.gd" type="Script" id=8]
+[ext_resource path="res://Main menu scripts/TWBPbutton.gd" type="Script" id=9]
+[ext_resource path="res://Icons/Covers/The world border platformer cover.png" type="Texture" id=10]
+
+[sub_resource type="StyleBoxFlat" id=1]
+bg_color = Color( 0.109804, 0.105882, 0.113725, 1 )
+
+[sub_resource type="StyleBoxFlat" id=2]
+bg_color = Color( 0.270588, 0.270588, 0.352941, 1 )
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+
+[sub_resource type="StyleBoxFlat" id=9]
+bg_color = Color( 0.270588, 0.270588, 0.352941, 1 )
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+
+[sub_resource type="StyleBoxFlat" id=10]
+bg_color = Color( 0.270588, 0.270588, 0.352941, 1 )
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+
+[sub_resource type="StyleBoxFlat" id=7]
+bg_color = Color( 0.270588, 0.270588, 0.352941, 1 )
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color( 0.886275, 0.878431, 0.984314, 1 )
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+
+[sub_resource type="StyleBoxFlat" id=11]
+bg_color = Color( 0.270588, 0.270588, 0.352941, 1 )
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+
+[sub_resource type="StyleBoxFlat" id=8]
+bg_color = Color( 0.270588, 0.270588, 0.352941, 1 )
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+
+[sub_resource type="StyleBoxFlat" id=3]
+bg_color = Color( 0.270588, 0.270588, 0.352941, 1 )
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+
+[sub_resource type="StyleBoxFlat" id=4]
+bg_color = Color( 0.270588, 0.270588, 0.352941, 0 )
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color( 0.886275, 0.878431, 0.984314, 1 )
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+
+[sub_resource type="StyleBoxFlat" id=12]
+bg_color = Color( 0.270588, 0.270588, 0.352941, 1 )
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+
+[sub_resource type="DynamicFontData" id=13]
+font_path = "res://Font/Roboto-Bold.ttf"
+
+[sub_resource type="DynamicFont" id=14]
+font_data = SubResource( 13 )
+
+[sub_resource type="StyleBoxFlat" id=15]
+draw_center = false
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color( 0.886275, 0.878431, 0.984314, 1 )
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+
+[sub_resource type="Animation" id=5]
+resource_name = "transition_from_scene"
+length = 0.2
+tracks/0/type = "value"
+tracks/0/path = NodePath("MarginContainer:rect_scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.2 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 0.6, 0.6 ), Vector2( 1, 1 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("MarginContainer:rect_position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 0.2 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( -600, 125 ), Vector2( 0, 0 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("MarginContainer:modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0, 0.2 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
+}
+
+[sub_resource type="Animation" id=6]
+resource_name = "transition_to_new_scene"
+length = 0.2
+tracks/0/type = "value"
+tracks/0/path = NodePath("MarginContainer:rect_scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.2 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 1, 1 ), Vector2( 0.6, 0.6 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("MarginContainer:rect_position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 0.2 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 0, 0 ), Vector2( -600, 125 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("MarginContainer:modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0, 0.2 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
+}
+
+[node name="Main" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 6 )
+
+[node name="Panel" type="Panel" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_styles/panel = SubResource( 1 )
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_constants/margin_right = 32
+custom_constants/margin_top = 32
+custom_constants/margin_left = 32
+custom_constants/margin_bottom = 32
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer"]
+margin_left = 32.0
+margin_top = 32.0
+margin_right = 992.0
+margin_bottom = 568.0
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer/VBoxContainer"]
+margin_right = 960.0
+margin_bottom = 88.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+size_flags_stretch_ratio = 0.2
+
+[node name="Panel" type="Panel" parent="MarginContainer/VBoxContainer/HBoxContainer"]
+margin_right = 869.0
+margin_bottom = 88.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+size_flags_stretch_ratio = 0.2
+custom_styles/panel = SubResource( 2 )
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer/VBoxContainer/HBoxContainer/Panel"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="TextureRect" type="TextureRect" parent="MarginContainer/VBoxContainer/HBoxContainer/Panel/HBoxContainer"]
+modulate = Color( 0.886275, 0.878431, 0.984314, 1 )
+margin_right = 80.0
+margin_bottom = 88.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource( 4 )
+expand = true
+stretch_mode = 6
+
+[node name="Label" type="Label" parent="MarginContainer/VBoxContainer/HBoxContainer/Panel/HBoxContainer"]
+margin_left = 84.0
+margin_right = 869.0
+margin_bottom = 88.0
+size_flags_horizontal = 3
+size_flags_vertical = 7
+size_flags_stretch_ratio = 9.8
+custom_colors/font_color = Color( 0.886275, 0.878431, 0.984314, 1 )
+custom_fonts/font = ExtResource( 1 )
+text = "Raspmily Store"
+align = 1
+valign = 1
+
+[node name="Button" type="Button" parent="MarginContainer/VBoxContainer/HBoxContainer"]
+margin_left = 873.0
+margin_right = 960.0
+margin_bottom = 88.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+size_flags_stretch_ratio = 0.02
+custom_colors/icon_color_pressed = Color( 0.886275, 0.878431, 0.984314, 1 )
+custom_colors/icon_color_disabled = Color( 0.886275, 0.878431, 0.984314, 1 )
+custom_colors/icon_color_focus = Color( 0.886275, 0.878431, 0.984314, 1 )
+custom_colors/icon_color_hover_pressed = Color( 0.886275, 0.878431, 0.984314, 1 )
+custom_colors/icon_color_normal = Color( 0.886275, 0.878431, 0.984314, 1 )
+custom_colors/icon_color_hover = Color( 0.886275, 0.878431, 0.984314, 1 )
+custom_styles/hover = SubResource( 9 )
+custom_styles/pressed = SubResource( 10 )
+custom_styles/focus = SubResource( 7 )
+custom_styles/disabled = SubResource( 11 )
+custom_styles/normal = SubResource( 8 )
+icon = ExtResource( 7 )
+icon_align = 1
+expand_icon = true
+script = ExtResource( 8 )
+
+[node name="MarginContainer" type="MarginContainer" parent="MarginContainer/VBoxContainer"]
+margin_top = 92.0
+margin_right = 960.0
+margin_bottom = 536.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+custom_constants/margin_top = 16
+
+[node name="GridContainer" type="GridContainer" parent="MarginContainer/VBoxContainer/MarginContainer"]
+margin_top = 16.0
+margin_right = 960.0
+margin_bottom = 444.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+custom_constants/vseparation = 16
+custom_constants/hseparation = 16
+columns = 4
+
+[node name="Panel" type="Panel" parent="MarginContainer/VBoxContainer/MarginContainer/GridContainer"]
+margin_right = 236.0
+margin_bottom = 206.0
+rect_min_size = Vector2( 0, 206 )
+size_flags_horizontal = 3
+custom_styles/panel = SubResource( 3 )
+
+[node name="MarginContainer" type="MarginContainer" parent="MarginContainer/VBoxContainer/MarginContainer/GridContainer/Panel"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+custom_constants/margin_top = 16
+custom_constants/margin_bottom = 8
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer/VBoxContainer/MarginContainer/GridContainer/Panel/MarginContainer"]
+margin_top = 16.0
+margin_right = 236.0
+margin_bottom = 198.0
+
+[node name="TextureRect" type="TextureRect" parent="MarginContainer/VBoxContainer/MarginContainer/GridContainer/Panel/MarginContainer/VBoxContainer"]
+margin_right = 236.0
+margin_bottom = 148.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource( 3 )
+expand = true
+stretch_mode = 6
+
+[node name="Label" type="Label" parent="MarginContainer/VBoxContainer/MarginContainer/GridContainer/Panel/MarginContainer/VBoxContainer"]
+margin_top = 155.0
+margin_right = 236.0
+margin_bottom = 179.0
+size_flags_horizontal = 3
+size_flags_vertical = 6
+size_flags_stretch_ratio = 0.2
+custom_colors/font_color = Color( 0.886275, 0.878431, 0.984314, 1 )
+custom_fonts/font = ExtResource( 2 )
+text = "The world editor"
+align = 1
+valign = 1
+
+[node name="Button" type="Button" parent="MarginContainer/VBoxContainer/MarginContainer/GridContainer/Panel"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+rect_min_size = Vector2( 0, 206 )
+size_flags_horizontal = 3
+custom_styles/focus = SubResource( 4 )
+flat = true
+expand_icon = true
+script = ExtResource( 5 )
+
+[node name="Panel2" type="Panel" parent="MarginContainer/VBoxContainer/MarginContainer/GridContainer"]
+margin_left = 252.0
+margin_right = 488.0
+margin_bottom = 206.0
+size_flags_horizontal = 3
+custom_styles/panel = SubResource( 12 )
+
+[node name="MarginContainer" type="MarginContainer" parent="MarginContainer/VBoxContainer/MarginContainer/GridContainer/Panel2"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_constants/margin_top = 16
+custom_constants/margin_bottom = 8
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer/VBoxContainer/MarginContainer/GridContainer/Panel2/MarginContainer"]
+margin_top = 16.0
+margin_right = 236.0
+margin_bottom = 198.0
+
+[node name="TextureRect" type="TextureRect" parent="MarginContainer/VBoxContainer/MarginContainer/GridContainer/Panel2/MarginContainer/VBoxContainer"]
+margin_right = 236.0
+margin_bottom = 148.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource( 10 )
+expand = true
+stretch_mode = 6
+
+[node name="Label" type="Label" parent="MarginContainer/VBoxContainer/MarginContainer/GridContainer/Panel2/MarginContainer/VBoxContainer"]
+margin_top = 157.0
+margin_right = 236.0
+margin_bottom = 176.0
+size_flags_horizontal = 3
+size_flags_vertical = 6
+size_flags_stretch_ratio = 0.2
+custom_colors/font_color = Color( 0.886275, 0.878431, 0.984314, 1 )
+custom_fonts/font = SubResource( 14 )
+text = "The world border platformer"
+align = 1
+valign = 1
+
+[node name="Button" type="Button" parent="MarginContainer/VBoxContainer/MarginContainer/GridContainer/Panel2"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_styles/focus = SubResource( 15 )
+flat = true
+script = ExtResource( 9 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+anims/transition_from_scene = SubResource( 5 )
+anims/transition_to_new_scene = SubResource( 6 )
+
+[connection signal="pressed" from="MarginContainer/VBoxContainer/HBoxContainer/Button" to="MarginContainer/VBoxContainer/HBoxContainer/Button" method="_on_Button_pressed"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/MarginContainer/GridContainer/Panel/Button" to="MarginContainer/VBoxContainer/MarginContainer/GridContainer/Panel/Button" method="_on_Button_pressed"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/MarginContainer/GridContainer/Panel2/Button" to="MarginContainer/VBoxContainer/MarginContainer/GridContainer/Panel2/Button" method="_on_Button_pressed"]
+[connection signal="animation_finished" from="AnimationPlayer" to="MarginContainer/VBoxContainer/MarginContainer/GridContainer/Panel/Button" method="_on_AnimationPlayer_animation_finished"]
+[connection signal="animation_finished" from="AnimationPlayer" to="MarginContainer/VBoxContainer/HBoxContainer/Button" method="_on_AnimationPlayer_animation_finished"]
+[connection signal="animation_finished" from="AnimationPlayer" to="MarginContainer/VBoxContainer/MarginContainer/GridContainer/Panel2/Button" method="_on_AnimationPlayer_animation_finished"]
