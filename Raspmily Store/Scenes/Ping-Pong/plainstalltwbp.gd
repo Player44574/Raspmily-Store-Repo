@@ -5,13 +5,13 @@ var version = "1.0"
 var configuracion = ConfigFile.new()
 var cerrar_launcher = 0
 
-var exe_link = "https://github.com/Player44574/Raspmily-Store-Repo/raw/refs/heads/main/WindowsDesktop/Naves/Naves%20V"+str(version)+"/Naves.exe" 
-var win_link = "https://github.com/Player44574/Raspmily-Store-Repo/raw/refs/heads/main/WindowsDesktop/Naves/Naves%20V"+str(version)+"/data.win"
-var options_link = "https://raw.githubusercontent.com/Player44574/Raspmily-Store-Repo/refs/heads/main/WindowsDesktop/Naves/Naves%20V"+str(version)+"/options.ini"
+var exe_link = "https://github.com/Player44574/Raspmily-Store-Repo/raw/refs/heads/main/WindowsDesktop/Pong/Pong%20V"+str(version)+"/Pong.exe" 
+var win_link = "https://github.com/Player44574/Raspmily-Store-Repo/raw/refs/heads/main/WindowsDesktop/Pong/Pong%20V"+str(version)+"/data.win"
+var options_link = "https://raw.githubusercontent.com/Player44574/Raspmily-Store-Repo/refs/heads/main/WindowsDesktop/Pong/Pong%20V"+str(version)+"/options.ini"
 
-var exe_path = "user://Naves " + str(version) +"/Naves.exe"
-var win_path = "user://Naves " + str(version) +"/data.win"
-var options_path = "user://Naves " + str(version) +"/options.ini"
+var exe_path = "user://Pong " + str(version) +"/Pong.exe"
+var win_path = "user://Pong " + str(version) +"/data.win"
+var options_path = "user://Pong " + str(version) +"/options.ini"
 
 var http_request: HTTPRequest
 
@@ -43,8 +43,8 @@ func file_exists(path: String) -> bool:
 
 func _verify_game_files():
 	var directory = Directory.new()
-	if not directory.dir_exists("user://Naves " + str(version) +"/"):
-		directory.make_dir("user://Naves " + str(version) +"/")
+	if not directory.dir_exists("user://Pong " + str(version) +"/"):
+		directory.make_dir("user://Pong " + str(version) +"/")
 	
 	if not file_exists(exe_path) && not file_exists(win_path) && not file_exists(options_path):
 		_check_integrity()
@@ -95,7 +95,7 @@ func _check_integrity():
 	$"../../Uninstall_button/Button2".disabled = false
 
 func _start_game():
-	OS.shell_open(OS.get_user_data_dir() + "/Naves " + str(version) +"/Naves.exe")
+	OS.shell_open(OS.get_user_data_dir() + "/Pong " + str(version) +"/Pong.exe")
 	cerrar_launcher = configuracion.get_value("Opciones", "Cerrar launcher al iniciar", "false")
 	if cerrar_launcher == "true":
 		get_tree().quit()
@@ -103,13 +103,13 @@ func _start_game():
 func _on_OptionButton_item_selected(index):
 	version = $"../../../OptionButton".text
 	
-	exe_link = "https://github.com/Player44574/Raspmily-Store-Repo/raw/refs/heads/main/WindowsDesktop/Naves/Naves%20V"+str(version)+"/Naves.exe" 
-	win_link = "https://github.com/Player44574/Raspmily-Store-Repo/raw/refs/heads/main/WindowsDesktop/Naves/Naves%20V"+str(version)+"/data.win"
-	options_link = "https://raw.githubusercontent.com/Player44574/Raspmily-Store-Repo/refs/heads/main/WindowsDesktop/Naves/Naves%20V"+str(version)+"/options.ini"
+	exe_link = "https://github.com/Player44574/Raspmily-Store-Repo/raw/refs/heads/main/WindowsDesktop/Pong/Pong%20V"+str(version)+"/Pong.exe" 
+	win_link = "https://github.com/Player44574/Raspmily-Store-Repo/raw/refs/heads/main/WindowsDesktop/Pong/Pong%20V"+str(version)+"/data.win"
+	options_link = "https://raw.githubusercontent.com/Player44574/Raspmily-Store-Repo/refs/heads/main/WindowsDesktop/Pong/Pong%20V"+str(version)+"/options.ini"
 
-	exe_path = "user://Naves " + str(version) +"/Naves.exe"
-	win_path = "user://Naves " + str(version) +"/data.win"
-	options_path = "user://Naves " + str(version) +"/options.ini"
+	exe_path = "user://Pong " + str(version) +"/Pong.exe"
+	win_path = "user://Pong " + str(version) +"/data.win"
+	options_path = "user://Pong " + str(version) +"/options.ini"
 	
 	if not file_exists(exe_path) or not file_exists(win_path) or not file_exists(options_path):
 		$"../TextureRect".texture = install_icon

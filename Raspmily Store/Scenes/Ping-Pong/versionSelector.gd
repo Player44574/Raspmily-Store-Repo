@@ -1,7 +1,7 @@
 extends OptionButton
 
-var versionList_link = "https://raw.githubusercontent.com/Player44574/Raspmily-Store-Repo/refs/heads/main/WindowsDesktop/Naves/version.ini"
-var versionList_path = "user://Naves/version.ini"
+var versionList_link = "https://raw.githubusercontent.com/Player44574/Raspmily-Store-Repo/refs/heads/main/WindowsDesktop/Pong/version.ini"
+var versionList_path = "user://Pong/version.ini"
 
 var http_request: HTTPRequest
 
@@ -11,8 +11,8 @@ var betas = 0
 func _ready():
 	$"../HBoxContainer/Play_Install_button/Button".disabled = true
 	var directory = Directory.new()
-	if not directory.dir_exists("user://Naves/"):
-		directory.make_dir("user://Naves/")
+	if not directory.dir_exists("user://Pong/"):
+		directory.make_dir("user://Pong/")
 	directory.remove(versionList_path)
 	
 	_download_file(versionList_link, versionList_path, false)
@@ -38,7 +38,7 @@ func _install_file(_result, _response_code, _headers, body, path, just_version: 
 	var config = ConfigFile.new()
 
 	# Load data from a file.
-	var err = config.load("user://Naves/version.ini")
+	var err = config.load("user://Pong/version.ini")
 
 	# If the file didn't load, ignore it.
 	if err != OK:
@@ -56,17 +56,17 @@ func _install_file(_result, _response_code, _headers, body, path, just_version: 
 			var version = config.get_value("Versions", key)
 			$"../HBoxContainer/Play_Install_button/Button".disabled = false
 			$"../HBoxContainer/Play_Install_button/Button".version = version
-			$"../HBoxContainer/Play_Install_button/Button".exe_link = "https://github.com/Player44574/Raspmily-Store-Repo/raw/refs/heads/main/WindowsDesktop/Naves/Naves%20V"+str(version)+"/Naves.exe"
-			$"../HBoxContainer/Play_Install_button/Button".win_link = "https://github.com/Player44574/Raspmily-Store-Repo/raw/refs/heads/main/WindowsDesktop/Naves/Naves%20V"+str(version)+"/data.win"
-			$"../HBoxContainer/Play_Install_button/Button".options_link = "https://raw.githubusercontent.com/Player44574/Raspmily-Store-Repo/refs/heads/main/WindowsDesktop/Naves/Naves%20V"+str(version)+"/options.ini"
-			$"../HBoxContainer/Play_Install_button/Button".exe_path = "user://Naves " + str(version) +"/Naves.exe"
-			$"../HBoxContainer/Play_Install_button/Button".win_path = "user://Naves " + str(version) +"/data.win"
-			$"../HBoxContainer/Play_Install_button/Button".options_path = "user://Naves " + str(version) +"/options.ini"
+			$"../HBoxContainer/Play_Install_button/Button".exe_link = "https://github.com/Player44574/Raspmily-Store-Repo/raw/refs/heads/main/WindowsDesktop/Pong/Pong%20V"+str(version)+"/Pong.exe" 
+			$"../HBoxContainer/Play_Install_button/Button".win_link = "https://github.com/Player44574/Raspmily-Store-Repo/raw/refs/heads/main/WindowsDesktop/Pong/Pong%20V"+str(version)+"/data.win"
+			$"../HBoxContainer/Play_Install_button/Button".options_link = "https://raw.githubusercontent.com/Player44574/Raspmily-Store-Repo/refs/heads/main/WindowsDesktop/Pong/Pong%20V"+str(version)+"/options.ini"
+			$"../HBoxContainer/Play_Install_button/Button".exe_path = "user://Pong " + str(version) +"/Pong.exe"
+			$"../HBoxContainer/Play_Install_button/Button".win_path = "user://Pong " + str(version) +"/data.win"
+			$"../HBoxContainer/Play_Install_button/Button".options_path = "user://Pong " + str(version) +"/options.ini"
 
 			
 			$"../HBoxContainer/Uninstall_button/Button2".version = version
-			$"../HBoxContainer/Uninstall_button/Button2".exe_path = "user://Naves " + str(version) +"/Naves.exe"
-			$"../HBoxContainer/Uninstall_button/Button2".win_path = "user://Naves " + str(version) +"/data.win"
-			$"../HBoxContainer/Uninstall_button/Button2".options_path = "user://Naves " + str(version) +"/options.ini"
+			$"../HBoxContainer/Uninstall_button/Button2".exe_path = "user://Pong " + str(version) +"/Pong.exe"
+			$"../HBoxContainer/Uninstall_button/Button2".win_path = "user://Pong " + str(version) +"/data.win"
+			$"../HBoxContainer/Uninstall_button/Button2".options_path = "user://Pong " + str(version) +"/options.ini"
 			
 			$"../HBoxContainer/Play_Install_button/Button"._update_text()

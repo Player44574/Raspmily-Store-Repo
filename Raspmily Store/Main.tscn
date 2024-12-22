@@ -1,4 +1,4 @@
-[gd_scene load_steps=32 format=2]
+[gd_scene load_steps=38 format=2]
 
 [ext_resource path="res://Font/roboto_bold.tres" type="DynamicFont" id=1]
 [ext_resource path="res://Font/roboto_bold_20.tres" type="DynamicFont" id=2]
@@ -13,6 +13,9 @@
 [ext_resource path="res://Icons/Covers/Minesweeper cover.png" type="Texture" id=11]
 [ext_resource path="res://Icons/Covers/Naves cover.png" type="Texture" id=12]
 [ext_resource path="res://Icons/Covers/Pong cover.png" type="Texture" id=13]
+[ext_resource path="res://Main menu scripts/Navebutton.gd" type="Script" id=14]
+[ext_resource path="res://Main menu scripts/PingPongButton.gd" type="Script" id=15]
+[ext_resource path="res://Main menu scripts/MinesweeperButton.gd" type="Script" id=16]
 
 [sub_resource type="StyleBoxFlat" id=1]
 bg_color = Color( 0.109804, 0.105882, 0.113725, 1 )
@@ -115,6 +118,18 @@ corner_radius_top_right = 16
 corner_radius_bottom_right = 16
 corner_radius_bottom_left = 16
 
+[sub_resource type="StyleBoxFlat" id=19]
+draw_center = false
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color( 0.886275, 0.878431, 0.984314, 1 )
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+
 [sub_resource type="StyleBoxFlat" id=17]
 bg_color = Color( 0.270588, 0.270588, 0.352941, 1 )
 corner_radius_top_left = 16
@@ -122,8 +137,33 @@ corner_radius_top_right = 16
 corner_radius_bottom_right = 16
 corner_radius_bottom_left = 16
 
+[sub_resource type="StyleBoxFlat" id=20]
+bg_color = Color( 0.886275, 0.878431, 0.984314, 1 )
+draw_center = false
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color( 0.886275, 0.878431, 0.984314, 1 )
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+
 [sub_resource type="StyleBoxFlat" id=18]
 bg_color = Color( 0.270588, 0.270588, 0.352941, 1 )
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+
+[sub_resource type="StyleBoxFlat" id=21]
+draw_center = false
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color( 0.886275, 0.878431, 0.984314, 1 )
 corner_radius_top_left = 16
 corner_radius_top_right = 16
 corner_radius_bottom_right = 16
@@ -458,6 +498,13 @@ text = "Asteroids"
 align = 1
 valign = 1
 
+[node name="Button" type="Button" parent="MarginContainer/VBoxContainer/MarginContainer/GridContainer/Panel3"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_styles/focus = SubResource( 19 )
+flat = true
+script = ExtResource( 14 )
+
 [node name="Panel4" type="Panel" parent="MarginContainer/VBoxContainer/MarginContainer/GridContainer"]
 margin_left = 732.0
 margin_right = 960.0
@@ -498,6 +545,13 @@ custom_fonts/font = ExtResource( 2 )
 text = "Ping-Pong"
 align = 1
 valign = 1
+
+[node name="Button" type="Button" parent="MarginContainer/VBoxContainer/MarginContainer/GridContainer/Panel4"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_styles/focus = SubResource( 20 )
+flat = true
+script = ExtResource( 15 )
 
 [node name="Panel5" type="Panel" parent="MarginContainer/VBoxContainer/MarginContainer/GridContainer"]
 margin_top = 222.0
@@ -540,6 +594,13 @@ text = "Minesweeper"
 align = 1
 valign = 1
 
+[node name="Button" type="Button" parent="MarginContainer/VBoxContainer/MarginContainer/GridContainer/Panel5"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_styles/focus = SubResource( 21 )
+flat = true
+script = ExtResource( 16 )
+
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 anims/transition_from_scene = SubResource( 5 )
 anims/transition_to_new_scene = SubResource( 6 )
@@ -547,6 +608,12 @@ anims/transition_to_new_scene = SubResource( 6 )
 [connection signal="pressed" from="MarginContainer/VBoxContainer/HBoxContainer/Button" to="MarginContainer/VBoxContainer/HBoxContainer/Button" method="_on_Button_pressed"]
 [connection signal="pressed" from="MarginContainer/VBoxContainer/MarginContainer/GridContainer/Panel/Button" to="MarginContainer/VBoxContainer/MarginContainer/GridContainer/Panel/Button" method="_on_Button_pressed"]
 [connection signal="pressed" from="MarginContainer/VBoxContainer/MarginContainer/GridContainer/Panel2/Button" to="MarginContainer/VBoxContainer/MarginContainer/GridContainer/Panel2/Button" method="_on_Button_pressed"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/MarginContainer/GridContainer/Panel3/Button" to="MarginContainer/VBoxContainer/MarginContainer/GridContainer/Panel3/Button" method="_on_Button_pressed"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/MarginContainer/GridContainer/Panel4/Button" to="MarginContainer/VBoxContainer/MarginContainer/GridContainer/Panel4/Button" method="_on_Button_pressed"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/MarginContainer/GridContainer/Panel5/Button" to="MarginContainer/VBoxContainer/MarginContainer/GridContainer/Panel5/Button" method="_on_Button_pressed"]
 [connection signal="animation_finished" from="AnimationPlayer" to="MarginContainer/VBoxContainer/HBoxContainer/Button" method="_on_AnimationPlayer_animation_finished"]
 [connection signal="animation_finished" from="AnimationPlayer" to="MarginContainer/VBoxContainer/MarginContainer/GridContainer/Panel/Button" method="_on_AnimationPlayer_animation_finished"]
 [connection signal="animation_finished" from="AnimationPlayer" to="MarginContainer/VBoxContainer/MarginContainer/GridContainer/Panel2/Button" method="_on_AnimationPlayer_animation_finished"]
+[connection signal="animation_finished" from="AnimationPlayer" to="MarginContainer/VBoxContainer/MarginContainer/GridContainer/Panel3/Button" method="_on_AnimationPlayer_animation_finished"]
+[connection signal="animation_finished" from="AnimationPlayer" to="MarginContainer/VBoxContainer/MarginContainer/GridContainer/Panel4/Button" method="_on_AnimationPlayer_animation_finished"]
+[connection signal="animation_finished" from="AnimationPlayer" to="MarginContainer/VBoxContainer/MarginContainer/GridContainer/Panel5/Button" method="_on_AnimationPlayer_animation_finished"]
