@@ -5,12 +5,12 @@ var version = "1.0"
 var configuracion = ConfigFile.new()
 var cerrar_launcher = 0
 
-var exe_link = "https://github.com/Player44574/the-world-editor/raw/main/versions/Windows/The%20world%20editor%20V" + str(version) +"/The%20world%20editor.exe" 
-var win_link = "https://github.com/Player44574/the-world-editor/raw/main/versions/Windows/The%20world%20editor%20V" + str(version) +"/data.win"
-var options_link = "https://raw.githubusercontent.com/Player44574/the-world-editor/main/versions/Windows/The%20world%20editor%20V" + str(version) +"/options.ini"
-var fmodL_link = "https://github.com/Player44574/the-world-editor/raw/main/versions/Windows/The%20world%20editor%20V" + str(version) +"/fmodL.dll"
-var fmodStudioL_link = "https://github.com/Player44574/the-world-editor/raw/main/versions/Windows/The%20world%20editor%20V" + str(version) +"/fmodstudioL.dll"
-var YYFMOD_link = "https://github.com/Player44574/the-world-editor/raw/main/versions/Windows/The%20world%20editor%20V" + str(version) +"/YYFMOD_x64.dll"
+var exe_link = "https://github.com/Player44574/Raspmily-Store-Repo/raw/refs/heads/main/WindowsDesktop/The%20World%20Editor/The%20world%20editor%20V"+ str(version) +"/The%20world%20editor.exe"
+var win_link = "https://github.com/Player44574/Raspmily-Store-Repo/raw/refs/heads/main/WindowsDesktop/The%20World%20Editor/The%20world%20editor%20V"+ str(version) +"/data.win"
+var options_link = "https://raw.githubusercontent.com/Player44574/Raspmily-Store-Repo/refs/heads/main/WindowsDesktop/The%20World%20Editor/The%20world%20editor%20V"+ str(version) +"/options.ini"
+var fmodL_link = "https://github.com/Player44574/Raspmily-Store-Repo/raw/refs/heads/main/WindowsDesktop/The%20World%20Editor/The%20world%20editor%20V"+ str(version) +"/fmodL.dll"
+var fmodStudioL_link = "https://github.com/Player44574/Raspmily-Store-Repo/raw/refs/heads/main/WindowsDesktop/The%20World%20Editor/The%20world%20editor%20V"+ str(version) +"/fmodstudioL.dll"
+var YYFMOD_link = "https://github.com/Player44574/Raspmily-Store-Repo/raw/refs/heads/main/WindowsDesktop/The%20World%20Editor/The%20world%20editor%20V"+ str(version) +"/YYFMOD_x64.dll"
 
 var exe_path = "user://The world editor " + str(version) +"/The world editor.exe"
 var win_path = "user://The world editor " + str(version) +"/data.win"
@@ -136,12 +136,12 @@ func _start_game():
 func _on_OptionButton_item_selected(index):
 	version = $"../../../OptionButton".text
 	
-	exe_link = "https://github.com/Player44574/the-world-editor/raw/main/versions/Windows/The%20world%20editor%20V" + str(version) +"/The%20world%20editor.exe" 
-	win_link = "https://github.com/Player44574/the-world-editor/raw/main/versions/Windows/The%20world%20editor%20V" + str(version) +"/data.win"
-	options_link = "https://raw.githubusercontent.com/Player44574/the-world-editor/main/versions/Windows/The%20world%20editor%20V" + str(version) +"/options.ini"
-	fmodL_link = "https://github.com/Player44574/the-world-editor/raw/main/versions/Windows/The%20world%20editor%20V" + str(version) +"/fmodL.dll"
-	fmodStudioL_link = "https://github.com/Player44574/the-world-editor/raw/main/versions/Windows/The%20world%20editor%20V" + str(version) +"/fmodstudioL.dll"
-	YYFMOD_link = "https://github.com/Player44574/the-world-editor/raw/main/versions/Windows/The%20world%20editor%20V" + str(version) +"/YYFMOD_x64.dll"
+	exe_link = "https://github.com/Player44574/Raspmily-Store-Repo/raw/refs/heads/main/WindowsDesktop/The%20World%20Editor/The%20world%20editor%20V"+ str(version) +"/The%20world%20editor.exe"
+	win_link = "https://github.com/Player44574/Raspmily-Store-Repo/raw/refs/heads/main/WindowsDesktop/The%20World%20Editor/The%20world%20editor%20V"+ str(version) +"/data.win"
+	options_link = "https://raw.githubusercontent.com/Player44574/Raspmily-Store-Repo/refs/heads/main/WindowsDesktop/The%20World%20Editor/The%20world%20editor%20V"+ str(version) +"/options.ini"
+	fmodL_link = "https://github.com/Player44574/Raspmily-Store-Repo/raw/refs/heads/main/WindowsDesktop/The%20World%20Editor/The%20world%20editor%20V"+ str(version) +"/fmodL.dll"
+	fmodStudioL_link = "https://github.com/Player44574/Raspmily-Store-Repo/raw/refs/heads/main/WindowsDesktop/The%20World%20Editor/The%20world%20editor%20V"+ str(version) +"/fmodstudioL.dll"
+	YYFMOD_link = "https://github.com/Player44574/Raspmily-Store-Repo/raw/refs/heads/main/WindowsDesktop/The%20World%20Editor/The%20world%20editor%20V"+ str(version) +"/YYFMOD_x64.dll"
 
 	exe_path = "user://The world editor " + str(version) +"/The world editor.exe"
 	win_path = "user://The world editor " + str(version) +"/data.win"

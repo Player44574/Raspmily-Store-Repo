@@ -1,8 +1,8 @@
 [gd_scene load_steps=33 format=2]
 
-[ext_resource path="res://Scenes/The world border platformer/versionSelector.gd" type="Script" id=1]
-[ext_resource path="res://Scenes/The world border platformer/uninstalltwbp.gd" type="Script" id=2]
-[ext_resource path="res://Scenes/The world border platformer/plainstalltwbp.gd" type="Script" id=3]
+[ext_resource path="res://Scenes/Naves/versionSelectornaves.gd" type="Script" id=1]
+[ext_resource path="res://Scenes/Naves/uninstallnaves.gd" type="Script" id=2]
+[ext_resource path="res://Scenes/Naves/plainstallnaves.gd" type="Script" id=3]
 [ext_resource path="res://Font/roboto_bold_20.tres" type="DynamicFont" id=4]
 [ext_resource path="res://Font/roboto_bold.tres" type="DynamicFont" id=5]
 [ext_resource path="res://Scenes/The world border platformer/iniscene.gd" type="Script" id=6]
@@ -248,14 +248,9 @@ anchor_bottom = 1.0
 custom_styles/panel = SubResource( 1 )
 
 [node name="MarginContainer" type="MarginContainer" parent="."]
-modulate = Color( 1, 1, 1, 0 )
 anchor_right = 1.0
 anchor_bottom = 1.0
-margin_left = 1000.0
-margin_top = 125.0
-margin_right = 999.999
-margin_bottom = 125.0
-rect_scale = Vector2( 0.6, 0.6 )
+margin_right = -0.000976563
 custom_constants/margin_right = 32
 custom_constants/margin_top = 32
 custom_constants/margin_left = 32

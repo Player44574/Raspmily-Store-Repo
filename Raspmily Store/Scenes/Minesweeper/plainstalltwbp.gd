@@ -5,13 +5,13 @@ var version = "1.0"
 var configuracion = ConfigFile.new()
 var cerrar_launcher = 0
 
-var exe_link = "https://github.com/Player44574/Raspmily-Store-Repo/raw/refs/heads/main/WindowsDesktop/The%20World%20Border%20Platformer/The%20world%20border%20platformer%20V"+str(version)+"/The%20world%20border%20platformer.exe" 
-var win_link = "https://github.com/Player44574/Raspmily-Store-Repo/raw/refs/heads/main/WindowsDesktop/The%20World%20Border%20Platformer/The%20world%20border%20platformer%20V"+str(version)+"/data.win"
-var options_link = "https://raw.githubusercontent.com/Player44574/Raspmily-Store-Repo/refs/heads/main/WindowsDesktop/The%20World%20Border%20Platformer/The%20world%20border%20platformer%20V"+str(version)+"/options.ini"
+var exe_link = "https://github.com/Player44574/Raspmily-Store-Repo/raw/refs/heads/main/WindowsDesktop/MineSweeper/MineSweeper%20V"+str(version)+"/Buscaminas.exe" 
+var win_link = "https://github.com/Player44574/Raspmily-Store-Repo/raw/refs/heads/main/WindowsDesktop/MineSweeper/MineSweeper%20V"+str(version)+"/data.win"
+var options_link = "https://raw.githubusercontent.com/Player44574/Raspmily-Store-Repo/refs/heads/main/WindowsDesktop/MineSweeper/MineSweeper%20V"+str(version)+"/options.ini"
 
-var exe_path = "user://The world border platformer " + str(version) +"/The world border platformer.exe"
-var win_path = "user://The world border platformer " + str(version) +"/data.win"
-var options_path = "user://The world border platformer " + str(version) +"/options.ini"
+var exe_path = "user://MineSweeper " + str(version) +"/MineSweeper.exe"
+var win_path = "user://MineSweeper " + str(version) +"/data.win"
+var options_path = "user://MineSweeper " + str(version) +"/options.ini"
 
 var http_request: HTTPRequest
 
@@ -43,8 +43,8 @@ func file_exists(path: String) -> bool:
 
 func _verify_game_files():
 	var directory = Directory.new()
-	if not directory.dir_exists("user://The world border platformer " + str(version) +"/"):
-		directory.make_dir("user://The world border platformer " + str(version) +"/")
+	if not directory.dir_exists("user://MineSweeper " + str(version) +"/"):
+		directory.make_dir("user://MineSweeper " + str(version) +"/")
 	
 	if not file_exists(exe_path) && not file_exists(win_path) && not file_exists(options_path):
 		_check_integrity()
@@ -95,7 +95,7 @@ func _check_integrity():
 	$"../../Uninstall_button/Button2".disabled = false
 
 func _start_game():
-	OS.shell_open(OS.get_user_data_dir() + "/The world border platformer " + str(version) +"/The world border platformer.exe")
+	OS.shell_open(OS.get_user_data_dir() + "/MineSweeper " + str(version) +"/MineSweeper.exe")
 	cerrar_launcher = configuracion.get_value("Opciones", "Cerrar launcher al iniciar", "false")
 	if cerrar_launcher == "true":
 		get_tree().quit()
@@ -103,13 +103,13 @@ func _start_game():
 func _on_OptionButton_item_selected(index):
 	version = $"../../../OptionButton".text
 	
-	exe_link = "https://github.com/Player44574/Raspmily-Store-Repo/raw/refs/heads/main/WindowsDesktop/The%20World%20Border%20Platformer/The%20world%20border%20platformer%20V"+str(version)+"/The%20world%20border%20platformer.exe" 
-	win_link = "https://github.com/Player44574/Raspmily-Store-Repo/raw/refs/heads/main/WindowsDesktop/The%20World%20Border%20Platformer/The%20world%20border%20platformer%20V"+str(version)+"/data.win"
-	options_link = "https://raw.githubusercontent.com/Player44574/Raspmily-Store-Repo/refs/heads/main/WindowsDesktop/The%20World%20Border%20Platformer/The%20world%20border%20platformer%20V"+str(version)+"/options.ini"
+	exe_link = "https://github.com/Player44574/Raspmily-Store-Repo/raw/refs/heads/main/WindowsDesktop/MineSweeper/MineSweeper%20V"+str(version)+"/Buscaminas.exe" 
+	win_link = "https://github.com/Player44574/Raspmily-Store-Repo/raw/refs/heads/main/WindowsDesktop/MineSweeper/MineSweeper%20V"+str(version)+"/data.win"
+	options_link = "https://raw.githubusercontent.com/Player44574/Raspmily-Store-Repo/refs/heads/main/WindowsDesktop/MineSweeper/MineSweeper%20V"+str(version)+"/options.ini"
 
-	exe_path = "user://The world border platformer " + str(version) +"/The world border platformer.exe"
-	win_path = "user://The world border platformer " + str(version) +"/data.win"
-	options_path = "user://The world border platformer " + str(version) +"/options.ini"
+	exe_path = "user://MineSweeper " + str(version) +"/MineSweeper.exe"
+	win_path = "user://MineSweeper " + str(version) +"/data.win"
+	options_path = "user://MineSweeper " + str(version) +"/options.ini"
 	
 	if not file_exists(exe_path) or not file_exists(win_path) or not file_exists(options_path):
 		$"../TextureRect".texture = install_icon

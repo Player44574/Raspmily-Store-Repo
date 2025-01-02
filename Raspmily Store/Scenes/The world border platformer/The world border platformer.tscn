@@ -8,9 +8,9 @@
 [ext_resource path="res://Icons/arrow_back_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.png" type="Texture" id=6]
 [ext_resource path="res://Scenes/The world border platformer/iniscene.gd" type="Script" id=7]
 [ext_resource path="res://Scenes/The world border platformer/gobacktomain.gd" type="Script" id=8]
-[ext_resource path="res://Scenes/The world border platformer/versionSelector.gd" type="Script" id=9]
-[ext_resource path="res://Scenes/The world border platformer/uninstalltwbp.gd" type="Script" id=10]
-[ext_resource path="res://Scenes/The world border platformer/plainstalltwbp.gd" type="Script" id=11]
+[ext_resource path="res://Scenes/The world border platformer/uninstalltwbp.gd" type="Script" id=9]
+[ext_resource path="res://Scenes/The world border platformer/plainstalltwbp.gd" type="Script" id=10]
+[ext_resource path="res://Scenes/The world border platformer/versionSelector.gd" type="Script" id=11]
 
 [sub_resource type="StyleBoxFlat" id=1]
 bg_color = Color( 0.109804, 0.105882, 0.113725, 1 )
@@ -363,7 +363,7 @@ custom_styles/disabled = SubResource( 9 )
 custom_styles/normal = SubResource( 10 )
 text = "Getting version list..."
 align = 1
-script = ExtResource( 9 )
+script = ExtResource( 11 )
 
 [node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer/VBoxContainer/MarginContainer/HBoxContainer/VBoxContainer"]
 margin_top = 326.0
@@ -422,7 +422,7 @@ size_flags_horizontal = 3
 size_flags_stretch_ratio = 4.0
 custom_styles/focus = SubResource( 5 )
 flat = true
-script = ExtResource( 11 )
+script = ExtResource( 10 )
 
 [node name="Uninstall_button" type="Panel" parent="MarginContainer/VBoxContainer/MarginContainer/HBoxContainer/VBoxContainer/HBoxContainer"]
 margin_left = 359.0
@@ -447,7 +447,7 @@ size_flags_horizontal = 3
 size_flags_vertical = 3
 custom_styles/focus = SubResource( 7 )
 flat = true
-script = ExtResource( 10 )
+script = ExtResource( 9 )
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 anims/animation_close_scene = SubResource( 20 )

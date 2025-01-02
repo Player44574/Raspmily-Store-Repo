@@ -1,6 +1,6 @@
 extends OptionButton
 
-var versionList_link = "https://raw.githubusercontent.com/Player44574/the-world-editor/main/versions/version.ini"
+var versionList_link = "https://raw.githubusercontent.com/Player44574/Raspmily-Store-Repo/refs/heads/main/WindowsDesktop/The%20World%20Editor/version.ini"
 var versionList_path = "user://The world editor/version.ini"
 
 var http_request: HTTPRequest
@@ -66,12 +66,12 @@ func _install_file(_result, _response_code, _headers, body, path, just_version: 
 			var version = config.get_value("Versions", key)
 			$"../HBoxContainer/Play_Install_button/Button".disabled = false
 			$"../HBoxContainer/Play_Install_button/Button".version = version
-			$"../HBoxContainer/Play_Install_button/Button".exe_link = "https://github.com/Player44574/the-world-editor/raw/main/versions/Windows/The%20world%20editor%20V" + str(version) +"/The%20world%20editor.exe" 
-			$"../HBoxContainer/Play_Install_button/Button".win_link = "https://github.com/Player44574/the-world-editor/raw/main/versions/Windows/The%20world%20editor%20V" + str(version) +"/data.win"
-			$"../HBoxContainer/Play_Install_button/Button".options_link = "https://raw.githubusercontent.com/Player44574/the-world-editor/main/versions/Windows/The%20world%20editor%20V" + str(version) +"/options.ini"
-			$"../HBoxContainer/Play_Install_button/Button".fmodL_link = "https://github.com/Player44574/the-world-editor/raw/main/versions/Windows/The%20world%20editor%20V" + str(version) +"/fmodL.dll"
-			$"../HBoxContainer/Play_Install_button/Button".fmodStudioL_link = "https://github.com/Player44574/the-world-editor/raw/main/versions/Windows/The%20world%20editor%20V" + str(version) +"/fmodstudioL.dll"
-			$"../HBoxContainer/Play_Install_button/Button".YYFMOD_link = "https://github.com/Player44574/the-world-editor/raw/main/versions/Windows/The%20world%20editor%20V" + str(version) +"/YYFMOD_x64.dll"
+			$"../HBoxContainer/Play_Install_button/Button".exe_link = "https://github.com/Player44574/Raspmily-Store-Repo/raw/refs/heads/main/WindowsDesktop/The%20World%20Editor/The%20world%20editor%20V"+ str(version) +"/The%20world%20editor.exe"
+			$"../HBoxContainer/Play_Install_button/Button".win_link = "https://github.com/Player44574/Raspmily-Store-Repo/raw/refs/heads/main/WindowsDesktop/The%20World%20Editor/The%20world%20editor%20V"+ str(version) +"/data.win"
+			$"../HBoxContainer/Play_Install_button/Button".options_link = "https://raw.githubusercontent.com/Player44574/Raspmily-Store-Repo/refs/heads/main/WindowsDesktop/The%20World%20Editor/The%20world%20editor%20V"+ str(version) +"/options.ini"
+			$"../HBoxContainer/Play_Install_button/Button".fmodL_link = "https://github.com/Player44574/Raspmily-Store-Repo/raw/refs/heads/main/WindowsDesktop/The%20World%20Editor/The%20world%20editor%20V"+ str(version) +"/fmodL.dll"
+			$"../HBoxContainer/Play_Install_button/Button".fmodStudioL_link = "https://github.com/Player44574/Raspmily-Store-Repo/raw/refs/heads/main/WindowsDesktop/The%20World%20Editor/The%20world%20editor%20V"+ str(version) +"/fmodstudioL.dll"
+			$"../HBoxContainer/Play_Install_button/Button".YYFMOD_link = "https://github.com/Player44574/Raspmily-Store-Repo/raw/refs/heads/main/WindowsDesktop/The%20World%20Editor/The%20world%20editor%20V"+ str(version) +"/YYFMOD_x64.dll"
 			$"../HBoxContainer/Play_Install_button/Button".exe_path = "user://The world editor " + str(version) +"/The world editor.exe"
 			$"../HBoxContainer/Play_Install_button/Button".win_path = "user://The world editor " + str(version) +"/data.win"
 			$"../HBoxContainer/Play_Install_button/Button".options_path = "user://The world editor " + str(version) +"/options.ini"

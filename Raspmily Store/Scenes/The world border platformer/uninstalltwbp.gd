@@ -3,9 +3,9 @@ extends Button
 
 var version = 1.0
 
-var exe_path = "user://Naves " + str(version) +"/Naves.exe"
-var win_path = "user://Naves " + str(version) +"/data.win"
-var options_path = "user://Naves " + str(version) +"/options.ini"
+var exe_path = "user://The world border platformer " + str(version) +"/The world border platformer.exe"
+var win_path = "user://The world border platformer " + str(version) +"/data.win"
+var options_path = "user://The world border platformer " + str(version) +"/options.ini"
 
 const install_icon = preload("res://Icons/download_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.png")
 const play_icon = preload("res://Icons/stadia_controller_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.png")
@@ -23,13 +23,13 @@ func _on_Button2_pressed():
 	dir.remove(exe_path)
 	dir.remove(win_path)
 	dir.remove(options_path)
-	dir.remove("user://Naves " + str(version) +"/")
+	dir.remove("user://The world border platformer " + str(version) +"/")
 	self.disabled = true
 	$"../../Play_Install_button/TextureRect".texture = install_icon
 
 
 func _on_OptionButton_item_selected(index):
 	version = $"../../../OptionButton".text
-	exe_path = "user://Naves " + str(version) +"/Naves.exe"
-	win_path = "user://Naves " + str(version) +"/data.win"
-	options_path = "user://Naves " + str(version) +"/options.ini"
+	exe_path = "user://The world border platformer " + str(version) +"/The world border platformer.exe"
+	win_path = "user://The world border platformer " + str(version) +"/data.win"
+	options_path = "user://The world border platformer " + str(version) +"/options.ini"
