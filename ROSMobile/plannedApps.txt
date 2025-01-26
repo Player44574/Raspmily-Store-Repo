@@ -1,2 +1,4 @@
--Few emulators (like nes, snes, gb, gbc and gba)
--Essential Apps like in normal ROS
+From: RaspmilyOS:
+
+-Emulators (Smaller selection NES, SNES, GB, GBC, GBA)
+-Ports (Naves only)
