@@ -1,4 +1,0 @@
-From: RaspmilyOS:
-
--Emulators (Smaller selection NES, SNES, GB, GBC, GBA)
--Ports (Naves only)
