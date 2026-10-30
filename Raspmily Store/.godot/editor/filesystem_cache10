@@ -1,0 +1,90 @@
+78098b89c88a74ebe8c20117b8754620
+::res://::1786289545
+cover.png::CompressedTexture2D::1559360567506979031::1747208632::1786289553::1::::<><><>0<>0<>2ee46e08a0b06e0c784a1386c9dd159c<>res://.godot/imported/cover.png-7415a2400197f69905d305dff229e3ab.ctex::
+default_env.tres::Environment::-1::1734687713::0::1::::<><><>0<>0<><>::
+export_presets.cfg::TextFile::-1::1737852671::0::1::::<><><>0<>0<><>::
+icon.png::CompressedTexture2D::7242468950206668567::1734687713::1786289553::1::::<><><>0<>0<>a93dbcb079763f9f4906a7f3bd4bd160<>res://.godot/imported/icon.png-487276ed1e3a0c39cad0279d744ee560.ctex::
+logo.ico::OtherFile::-1::1734687713::0::1::::<><><>0<>0<><>::
+logo.png::CompressedTexture2D::5825070785646836362::1734687713::1786289553::1::::<><><>0<>0<>b2713b49ae3eb170586bbc99c5e3367d<>res://.godot/imported/logo.png-cca8726399059c8d4f806e28e356b14d.ctex::
+Main.gd::GDScript::2991196791419741260::1734687713::0::1::::<>Control<><>0<>0<><>::
+Main.tscn::PackedScene::-1::1737852671::0::1::::<><><>0<>0<><>::res://Font/roboto_bold.tres<>res://Font/roboto_bold_20.tres<>res://Icons/Covers/The world editor cover.png<>res://Icons/shopping_bag_32dp_E8EAED_FILL0_wght400_GRAD0_opsz40.png<>res://Main menu scripts/Twebutton.gd<>res://Main.gd<>res://Icons/settings_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.png<>res://Main menu scripts/gotoSettings.gd<>res://Main menu scripts/TWBPbutton.gd<>res://Icons/Covers/The world border platformer cover.png<>res://Icons/Covers/Minesweeper cover.png<>res://Icons/Covers/Naves cover.png<>res://Icons/Covers/Pong cover.png<>res://Main menu scripts/Navebutton.gd<>res://Main menu scripts/PingPongButton.gd<>res://Main menu scripts/MinesweeperButton.gd
+::res://Font/::1734687712
+Roboto-Bold.ttf::::-1::1734687712::1734687712::1::::<><><>0<>0<>eee310571a4cbc4a9673c1f44f9e584b<>::
+Roboto-Regular.ttf::FontFile::8565910402460925508::1734687712::1786289553::1::::<><><>0<>0<>463aa9cf8dbf868336410ba7d75fbd01<>res://.godot/imported/Roboto-Regular.ttf-01acca9eabb4794ea5390983613e59d9.fontdata::
+roboto_bold.tres::FontFile::-1::1734687712::0::1::::<><><>0<>0<><>::
+roboto_bold_20.tres::FontFile::-1::1734687712::0::1::::<><><>0<>0<><>::
+::res://Icons/::1734687713
+arrow_back_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.png::CompressedTexture2D::5015750628884613164::1734687713::1786289553::1::::<><><>0<>0<>c8b12d1ae674dc043d32fe069933ab2d<>res://.godot/imported/arrow_back_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.png-5fa9b051bc386c0bed75c6d0dcc52b2b.ctex::
+clock_loader_10_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.png::CompressedTexture2D::8843891961627326721::1734687713::1786289553::1::::<><><>0<>0<>2bbd8470d0c04eaac275b7bd4f3ed129<>res://.godot/imported/clock_loader_10_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.png-b3e2fb348a6c87023e891ddbe124820b.ctex::
+clock_loader_20_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.png::CompressedTexture2D::7388325027938156285::1734687713::1786289553::1::::<><><>0<>0<>46c20b508e28a65d554451f9c3fc1320<>res://.godot/imported/clock_loader_20_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.png-2eb7dde2e5fe47715fddda90d93ba21d.ctex::
+clock_loader_40_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.png::CompressedTexture2D::2260185133336069951::1734687713::1786289553::1::::<><><>0<>0<>6260a015eb1c3d51b98fa56b218a24f1<>res://.godot/imported/clock_loader_40_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.png-4ce5c354bdef66c1b97e46a8416c4e96.ctex::
+clock_loader_60_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.png::CompressedTexture2D::1430335807878903288::1734687713::1786289553::1::::<><><>0<>0<>edaa7b4cf910375fe9af62384d7e79d4<>res://.godot/imported/clock_loader_60_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.png-3cbd3fd6cb91f84f9cffc90567ed7e4c.ctex::
+clock_loader_80_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.png::CompressedTexture2D::5961101641037368585::1734687713::1786289553::1::::<><><>0<>0<>96e0814641e23ead285f49d2b2e63884<>res://.godot/imported/clock_loader_80_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.png-9d6ca745adbd29ffdf5b1d810ff3dba4.ctex::
+clock_loader_90_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.png::CompressedTexture2D::5343219302695175723::1734687713::1786289553::1::::<><><>0<>0<>856bbf56f2fe8a5288530b01579270c2<>res://.godot/imported/clock_loader_90_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.png-eca0fe6eb4c323b4a8f15fc7f18f3aa2.ctex::
+close_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.png::CompressedTexture2D::2560186900845089495::1734687713::1786289553::1::::<><><>0<>0<>20751aa89096f785d6777e8bdbecfd05<>res://.godot/imported/close_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.png-bf18db97afad544882eec74de79a5394.ctex::
+delete_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.png::CompressedTexture2D::4492485458362499441::1734687713::1786289553::1::::<><><>0<>0<>4afb10133ddeec4282301018a6acce31<>res://.godot/imported/delete_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.png-d717b7da5d12d8ef401d436f77c00bb7.ctex::
+download_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.png::CompressedTexture2D::2263600149220148280::1734687713::1786289553::1::::<><><>0<>0<>310946dfc613fca1c97ec3c31c10e0a0<>res://.godot/imported/download_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.png-e37640637db6c048b2299c020e95a21d.ctex::
+list_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.png::CompressedTexture2D::2280566867702189594::1734687713::1786289553::1::::<><><>0<>0<>8d28952c67f25ee20073c5ee03833290<>res://.godot/imported/list_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.png-f0c2fdaf83334c7bb71ab82cb8c0c6dc.ctex::
+settings_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.png::CompressedTexture2D::2321365490391965605::1734687713::1786289553::1::::<><><>0<>0<>309ed53320c9993fdcdae865d82fc7f6<>res://.godot/imported/settings_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.png-0585db71d2cc928473848e6539191564.ctex::
+shopping_bag_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.png::CompressedTexture2D::8341065085830623042::1734687713::1786289553::1::::<><><>0<>0<>45de8f9e4e3425ec05e9bfb81b300409<>res://.godot/imported/shopping_bag_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.png-e769aaae4d8e3f78ff4dc713104a8fb4.ctex::
+shopping_bag_32dp_E8EAED_FILL0_wght400_GRAD0_opsz40.png::CompressedTexture2D::7263376854859446493::1734687713::1786289553::1::::<><><>0<>0<>13d884ef92f12ef9d45c79a6a8023526<>res://.godot/imported/shopping_bag_32dp_E8EAED_FILL0_wght400_GRAD0_opsz40.png-a777219892668d75fa90c7b6495d03a3.ctex::
+stadia_controller_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.png::CompressedTexture2D::1814479420651080418::1734687713::1786289553::1::::<><><>0<>0<>b70857d0bbadf541b859d64380ec5aa6<>res://.godot/imported/stadia_controller_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.png-03227b5c0db9981ecc5379c1c55ac524.ctex::
+update_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.png::CompressedTexture2D::3476933587227303588::1734687713::1786289553::1::::<><><>0<>0<>99c4442fc5a018e735d9c90e30777e15<>res://.godot/imported/update_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.png-e04fa85fc2896a1248631f926d74171a.ctex::
+::res://Icons/Covers/::1734687713
+logo.ico::OtherFile::-1::1734687713::0::1::::<><><>0<>0<><>::
+logo.png::CompressedTexture2D::9213390792813547463::1734687713::1786289553::1::::<><><>0<>0<>82f46db3ae3c0f9769263f2f0cc05db3<>res://.godot/imported/logo.png-f41f16835a4f491c98112d0ac283cd17.ctex::
+Minesweeper cover.png::CompressedTexture2D::629045105790813449::1734687712::1786289553::1::::<><><>0<>0<>4fa8724f2dfe44cae29eff25817de689<>res://.godot/imported/Minesweeper cover.png-bf7b49c74b28da5dcd07bc648ba45753.ctex::
+Naves cover.png::CompressedTexture2D::5657692213776352339::1734687712::1786289553::1::::<><><>0<>0<>d5e60682864b0eba263bc1e46ef86cf8<>res://.godot/imported/Naves cover.png-036fb3b0e67cf1d96d9d86fc09d83d84.ctex::
+Pong cover.png::CompressedTexture2D::8541983329619862920::1734687712::1786289553::1::::<><><>0<>0<>67ac105c0496893dd59ddad81be12103<>res://.godot/imported/Pong cover.png-ab1ca9d86e937b9de72da711030242bc.ctex::
+The world border platformer cover.png::CompressedTexture2D::815529279941348653::1734687712::1786289553::1::::<><><>0<>0<>0cc3b5aa9dd5685bcc187132745b5306<>res://.godot/imported/The world border platformer cover.png-cc3748fa42185452564632a9dfbb46c4.ctex::
+The world editor cover.png::CompressedTexture2D::6683500836223579512::1734687713::1786289553::1::::<><><>0<>0<>c1250db3f4571b20394f333ffa35871f<>res://.godot/imported/The world editor cover.png-030ff29945c465075577c9dd867f19ed.ctex::
+::res://Main menu scripts/::1737852671
+global.gd::GDScript::4125498372211586136::1734687713::0::1::::<>Node<><>0<>0<><>::
+gotoSettings.gd::GDScript::189015946572295682::1734687713::0::1::::<>Button<><>0<>0<><>::
+MinesweeperButton.gd::GDScript::6311052501329837983::1737852671::0::1::::<>Button<><>0<>0<><>::
+Navebutton.gd::GDScript::5391603197228447669::1737852671::0::1::::<>Button<><>0<>0<><>::
+PingPongButton.gd::GDScript::2363625471176958005::1737852671::0::1::::<>Button<><>0<>0<><>::
+TWBPbutton.gd::GDScript::3412252719653840463::1734687713::0::1::::<>Button<><>0<>0<><>::
+Twebutton.gd::GDScript::3913177119255522360::1734687713::0::1::::<>Button<><>0<>0<><>::
+::res://Scenes/::1737852671
+::res://Scenes/Minesweeper/::1737852671
+gobacktomain.gd::GDScript::5299587381159892995::1737852671::0::1::::<>Button<><>0<>0<><>::
+iniscene.gd::GDScript::8063589140252817639::1737852671::0::1::::<>MarginContainer<><>0<>0<><>::
+Minesweeper.tscn::PackedScene::-1::1737852671::0::1::::<><><>0<>0<><>::res://Scenes/Minesweeper/uninstalltwbp.gd<>res://Scenes/Minesweeper/plainstalltwbp.gd<>res://Scenes/Minesweeper/versionSelector.gd<>res://Font/roboto_bold_20.tres<>res://Font/roboto_bold.tres<>res://Scenes/The world border platformer/iniscene.gd<>res://Scenes/The world border platformer/gobacktomain.gd<>res://Icons/delete_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.png<>res://Icons/arrow_back_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.png<>res://Icons/list_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.png<>res://Icons/Covers/Minesweeper cover.png
+plainstalltwbp.gd::GDScript::349024726790870226::1737852671::0::1::::<>Button<><>0<>0<><>::
+uninstalltwbp.gd::GDScript::5432183446740652118::1737852671::0::1::::<>Button<><>0<>0<><>::
+versionSelector.gd::GDScript::7635033297348358269::1737852671::0::1::::<>OptionButton<><>0<>0<><>::
+::res://Scenes/Naves/::1737852671
+gobacktomain.gd::GDScript::7630362010708277786::1737852671::0::1::::<>Button<><>0<>0<><>::
+iniscene.gd::GDScript::2772989438446137177::1737852671::0::1::::<>MarginContainer<><>0<>0<><>::
+Naves.tscn::PackedScene::-1::1737852671::0::1::::<><><>0<>0<><>::res://Scenes/Naves/versionSelectornaves.gd<>res://Scenes/Naves/uninstallnaves.gd<>res://Scenes/Naves/plainstallnaves.gd<>res://Font/roboto_bold_20.tres<>res://Font/roboto_bold.tres<>res://Scenes/The world border platformer/iniscene.gd<>res://Scenes/The world border platformer/gobacktomain.gd<>res://Icons/delete_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.png<>res://Icons/arrow_back_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.png<>res://Icons/list_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.png<>res://Icons/Covers/Naves cover.png
+plainstallnaves.gd::GDScript::1824240511397288601::1737852671::0::1::::<>Button<><>0<>0<><>::
+uninstallnaves.gd::GDScript::3382548739911349498::1737852671::0::1::::<>Button<><>0<>0<><>::
+versionSelectornaves.gd::GDScript::3564524990939172022::1737852671::0::1::::<>OptionButton<><>0<>0<><>::
+::res://Scenes/Ping-Pong/::1737852671
+gobacktomain.gd::GDScript::5085806732560648765::1737852671::0::1::::<>Button<><>0<>0<><>::
+iniscene.gd::GDScript::2313680226275684470::1737852671::0::1::::<>MarginContainer<><>0<>0<><>::
+PingPong.tscn::PackedScene::-1::1737852671::0::1::::<><><>0<>0<><>::res://Scenes/Ping-Pong/plainstalltwbp.gd<>res://Scenes/Ping-Pong/uninstalltwbp.gd<>res://Scenes/The world border platformer/iniscene.gd<>res://Scenes/Ping-Pong/versionSelector.gd<>res://Scenes/The world border platformer/gobacktomain.gd<>res://Font/roboto_bold_20.tres<>res://Font/roboto_bold.tres<>res://Icons/Covers/Pong cover.png<>res://Icons/list_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.png<>res://Icons/delete_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.png<>res://Icons/arrow_back_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.png
+plainstalltwbp.gd::GDScript::3084842408715216895::1737852671::0::1::::<>Button<><>0<>0<><>::
+uninstalltwbp.gd::GDScript::5918346130018557179::1737852671::0::1::::<>Button<><>0<>0<><>::
+versionSelector.gd::GDScript::1463613252881085403::1737852671::0::1::::<>OptionButton<><>0<>0<><>::
+::res://Scenes/Settings/::1734687713
+backbutton settings.gd::GDScript::3970001364277070363::1734687713::0::1::::<>Button<><>0<>0<><>::
+Inianimation.gd::GDScript::3117473553853860865::1734687713::0::1::::<>MarginContainer<><>0<>0<><>::
+options.tscn::PackedScene::-1::1734687713::0::1::::<><><>0<>0<><>::res://Font/roboto_bold.tres<>res://Scenes/Settings/backbutton settings.gd<>res://Scenes/Settings/settings.gd<>res://Icons/arrow_back_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.png<>res://Font/roboto_bold_20.tres<>res://Scenes/Settings/Inianimation.gd
+settings.gd::GDScript::6641612356553129083::1734687713::0::1::::<>Node<><>0<>0<><>::
+::res://Scenes/The world border platformer/::1737852671
+gobacktomain.gd::GDScript::2042149053387685460::1734687713::0::1::::<>Button<><>0<>0<><>::
+iniscene.gd::GDScript::5675684418334495729::1734687713::0::1::::<>MarginContainer<><>0<>0<><>::
+plainstalltwbp.gd::GDScript::2447238682219261087::1734687713::0::1::::<>Button<><>0<>0<><>::
+The world border platformer.tscn::PackedScene::-1::1737852671::0::1::::<><><>0<>0<><>::res://Font/roboto_bold.tres<>res://Font/roboto_bold_20.tres<>res://Icons/list_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.png<>res://Icons/delete_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.png<>res://Icons/Covers/The world border platformer cover.png<>res://Icons/arrow_back_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.png<>res://Scenes/The world border platformer/iniscene.gd<>res://Scenes/The world border platformer/gobacktomain.gd<>res://Scenes/The world border platformer/uninstalltwbp.gd<>res://Scenes/The world border platformer/plainstalltwbp.gd<>res://Scenes/The world border platformer/versionSelector.gd
+uninstalltwbp.gd::GDScript::3098136005981476987::1734687713::0::1::::<>Button<><>0<>0<><>::
+versionSelector.gd::GDScript::2368773311903883210::1734687713::0::1::::<>OptionButton<><>0<>0<><>::
+::res://Scenes/The world editor/::1737852671
+Button2.gd::GDScript::4336098870513554949::1734687713::0::1::::<>Button<><>0<>0<><>::
+Button.gd::GDScript::5493535783220537533::1737852671::0::1::::<>Button<><>0<>0<><>::
+goBackToMain.gd::GDScript::1088286845239389445::1734687713::0::1::::<>Button<><>0<>0<><>::
+Opening Animation.gd::GDScript::3448779465191611655::1734687713::0::1::::<>MarginContainer<><>0<>0<><>::
+OptionButton.gd::GDScript::8214926514450569507::1737852671::0::1::::<>OptionButton<><>0<>0<><>::
+settingsButton.gd::GDScript::1123603826723458869::1734687713::0::1::::<>Button<><>0<>0<><>::
+The world editor.tscn::PackedScene::-1::1734687713::0::1::::<><><>0<>0<><>::res://Font/roboto_bold.tres<>res://Font/roboto_bold_20.tres<>res://Scenes/The world editor/Button.gd<>res://Scenes/The world editor/OptionButton.gd<>res://Scenes/The world editor/settingsButton.gd<>res://Scenes/The world editor/Button2.gd<>res://Icons/arrow_back_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.png<>res://Icons/Covers/The world editor cover.png<>res://Icons/delete_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.png<>res://Icons/list_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.png<>res://Scenes/The world editor/goBackToMain.gd<>res://Scenes/The world editor/Opening Animation.gd
